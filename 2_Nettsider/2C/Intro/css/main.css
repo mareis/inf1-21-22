@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+body {
+    background-color: darkolivegreen;
+    font-family: "Roboto", sans-serif;
+}
+<script async src="//jsfiddle.net/madsor/b9om38tn/15/embed/result/"></script>
+#yeah {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-weight: 100;
+}
+
+#main {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#main :nth-child(n) {
+    height: 40px;
+}
+#main :nth-child(odd) {
+    background-color: black;
+}
+#main :nth-child(even) {
+    background-color: orange;
+}
+#main :nth-child(odd):hover {
+    background-color: rgba(31, 31, 31, 0.863);
+}
+#main :nth-child(even):hover {
+    background-color: rgba(250, 183, 57, 0.808);
+}

@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    max-width: 800px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "h h h h h h"
+        "m m m m R R"
+        "f f f f f f";
+}
+
+#header {
+    grid-area: h;
+    position: sticky;
+    top: 0;
+}
+#main {
+    grid-area: m;
+    background-color: white;
+    padding: 10px;
+}
+#right {
+    grid-area: R;
+    background-color: white;
+    padding: 10px;
+}
+#footer {
+    height: 100px;
+    grid-area: f;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+#menu {
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: right;
+}
+#menu a {
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid black;
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+}
+
+#menu a:hover {
+    background-color: #e7e7e7f1;
+}

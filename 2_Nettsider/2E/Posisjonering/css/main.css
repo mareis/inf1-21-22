@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+#main-wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+#box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: sticky;
+    left: -50px;
+    top: 0px;
+}
+
+p {
+    position: relative;
+}
+#p-child {
+    position: absolute;
+    background-color: red;
+    height: 25px;
+    width: 3px;
+    left: 10px;
+}

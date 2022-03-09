@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+#main-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+        "h h h h h h h h"
+        "m m m m m m a a"
+        "f f f f f f f f";
+
+    grid-gap: 5px;
+}
+
+#header {
+    background-color: darkgreen;
+    height: 100px;
+    grid-area: h;
+}
+
+#main {
+    background-color: darkmagenta;
+    height: 500px;
+    grid-area: m;
+}
+
+#aside {
+    background-color: darkgoldenrod;
+    height: 500px;
+    grid-area: a;
+}
+
+#footer {
+    background-color: indigo;
+    height: 200px;
+    grid-area: f;
+}

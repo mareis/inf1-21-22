@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let vokal = "aeiouyæøå";
+            let konsonant = "bdfghjklnprstv";
+
+            for (let i = 0; i < 10; i++) {
+                let a = konsonant[Math.floor(Math.random() * konsonant.length)];
+                let c = konsonant[Math.floor(Math.random() * konsonant.length)];
+                let b = vokal[Math.floor(Math.random() * vokal.length)];
+                console.log(`${a}${b}${c}`);
+            }
+        </script>
+    </body>
+</html>

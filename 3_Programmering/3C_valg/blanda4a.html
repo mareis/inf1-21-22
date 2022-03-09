@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let valgtTall = prompt("Veld tall 1-50:") * 1;
+            let antallSpill = prompt("kjøp spill (1-1000) 101kr: ");
+
+            for (let ant = 1; ant <= antallSpill; ant = ant + 1) {
+                let trekkning = Math.floor(Math.random() * 50) + 1;
+                console.log(trekkning);
+                if (valgtTall === trekkning) {
+                    console.log("Du har vunnet 5000!!!");
+                }
+            }
+        </script>
+    </body>
+</html>

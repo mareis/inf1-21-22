@@ -1,0 +1,25 @@
+<script>
+    // Lage et spill der du må gjette på tallet
+    // datamaskinen har trukket tilfeldig fra 1-10.
+    // Du må gjette på nytt hvis det er feil. Hvis du
+    // gjetter rett skal programmet avsluttes med en
+    // gratulasjon og antall forsøkt det tok.
+
+    // Del 2: Du får tips om tallet du gjettet var
+    // for høyt eller for lavt. Øk også antall tall
+    // fra 10 til 100, Hva med 1000?
+
+    let tall = Math.floor(Math.random() * 100 + 1);
+    let gjettet_tall = Number(prompt("Gjett tallet (1-100):"));
+    let ant = 1;
+    while (gjettet_tall != tall) {
+        if (gjettet_tall > tall) {
+            gjettet_tall = Number(prompt("Det er feil. Tallet er lavere:"));
+        } else {
+            gjettet_tall = Number(prompt("Det er feil. Tallet er høyere:"));
+        }
+        ant++;
+    }
+
+    alert(`Gratulerer, ${gjettet_tall} er rett.\n Du brukte ${ant} forsøk.`);
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let terninger = 5;
+    let antYatzy = 0;
+    let tot = 1000000;
+    for (let ant = 1; ant <= tot; ant++) {
+        let antallEnere = 0;
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < terninger; j++) {
+                let kast = Math.floor(Math.random() * 6 + 1);
+                if (kast === 1) {
+                    antallEnere++;
+                }
+            }
+            if (antallEnere === 5) {
+                break;
+            }
+            terninger = 5 - antallEnere;
+        }
+        if (antallEnere === 5) {
+            antYatzy++;
+        }
+    }
+    console.log(antYatzy / tot);
+</script>

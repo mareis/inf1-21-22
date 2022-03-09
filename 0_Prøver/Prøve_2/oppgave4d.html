@@ -1,0 +1,12 @@
+<script>
+    let ikke_6 = true;
+    let kast = 0;
+    while (ikke_6) {
+        let terning = Math.floor(Math.random() * 6 + 1);
+        kast++;
+        if (terning === 6) {
+            ikke_6 = false;
+        }
+    }
+    console.log(`${kast} kast for å få 6-er.`);
+</script>

@@ -1,0 +1,22 @@
+<script>
+    function beholdYatzy(utfall, fjerne = []) {
+        if (fjerne.length == 0) {
+            console.log(utfall);
+            return utfall;
+        } else {
+            for (let i = 0; i < fjerne.length; i++) {
+                let slett = fjerne[i];
+                for (let j = 0; j < utfall.length; j++) {
+                    if (slett == utfall[j]) {
+                        utfall.splice(j, 1);
+                        j--;
+                    }
+                }
+            }
+            console.log(utfall);
+            return utfall;
+        }
+    }
+
+    beholdYatzy([1, 1, 2, 5, 4], [1, 4, 3, 2]);
+</script>

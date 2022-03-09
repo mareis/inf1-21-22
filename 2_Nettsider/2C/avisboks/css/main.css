@@ -1,0 +1,26 @@
+#box {
+    width: 400px;
+    height: 220px;
+    background-image: url("https://g.acdn.no/obscura/API/dynamic/r1/nadp/tr_2000_2000_s_f/0000/2021/09/26/3424183686/1/original/51052683.jpg?chk=50B18B");
+    background-size: cover;
+    position: relative;
+}
+
+#journalist {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 80px;
+    width: 100%;
+}
+#journalist img {
+    width: 60px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    border: 2px solid white;
+}
+#journalist h3 {
+    margin-bottom: 0;
+}

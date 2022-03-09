@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+#main-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    min-height: 200vh;
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+}
+
+#menu a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 7px 15px;
+    border-left: 2px solid black;
+}
+#menu a:hover {
+    box-shadow: teal 2px 2px 2px;
+}
+
+h1 {
+    padding: 10px;
+}
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+#wrapper div {
+    padding: 10px;
+}
