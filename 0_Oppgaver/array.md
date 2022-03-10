@@ -254,3 +254,44 @@ console.log(remove_array_element([2, 5, 9, 6], 5));
 Expected result:
 
     [2, 9, 6]
+
+## Oppgave 14 - **Hangman**
+
+-   **Del 1:** Skriv et program som lager en array med n "\_" (under score). Der n er lengden på ordet, ord.
+
+Testdata :
+
+```javascript
+ord = "javascript";
+```
+
+Bruk en løkke til å generere:
+
+```javascript
+utskrift = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
+```
+
+-   **Del 2:** Utvid programmet ved å skrive en funksjon
+
+```javascript
+function oppdaterUtskrift(bokstav){
+    .
+    .
+    .
+}
+```
+
+som tar en bokstav som argument og oppdaterer og skriver ut utskrift.
+
+Testdata :
+
+```javascript
+oppdaterUtskrift("a");
+console.log(utskrift);
+```
+
+Resultat:
+
+    ["_", "a", "_", "a", "_", "_", "_", "_", "_", "_"]
+
+-   **Utfordring** Gjør ferdig spillet ved hjelp av prompt for å kunne skrive inn bokstaver.
