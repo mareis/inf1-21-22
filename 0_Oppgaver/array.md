@@ -36,6 +36,8 @@ let food = ["Noodle", "Pasta", "Ice-cream"];
 let food = ["Fries", "Ice-cream", "Pizza"];
 ```
 
+-   Compare the 2 arrays and find common food if any
+
 ## Oppgave 6
 
 ```javascript
@@ -43,6 +45,8 @@ let values1 = ["Apple", 1, false];
 let values2 = ["Fries", 2, true];
 let values3 = ["Mars", 9, "Apple"];
 ```
+
+-   Compare the 3 arrays and find any common elements
 
 ## Oppgave 7
 
