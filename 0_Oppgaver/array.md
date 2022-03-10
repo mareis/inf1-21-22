@@ -2,6 +2,8 @@
 
 ## Oppgave 1
 
+---
+
 ```javascript
 let myAlphabet = ["A", "B", "C", "D", "E", "F", "G"];
 ```
@@ -12,15 +14,21 @@ let myAlphabet = ["A", "B", "C", "D", "E", "F", "G"];
 
 ## Oppgave 2
 
+---
+
 -   Declare and initialize an array called Planets with 5 string values
 -   console.log each item in the array.
 -   Also console.log the index in each iteration
 
 ## Oppgave 3
 
+---
+
 Lag en funksjon som tar en array som argument og returnerer og skriver ut en reversert utgave.
 
 ## Oppgave 4
+
+---
 
 ```javascript
 let student1Courses = ["Math", "English", "Programming"];
@@ -31,6 +39,8 @@ let student2Courses = ["Geography", "Spanish", "Programming"];
 
 ## Oppgave 5
 
+---
+
 ```javascript
 let food = ["Noodle", "Pasta", "Ice-cream"];
 let food = ["Fries", "Ice-cream", "Pizza"];
@@ -39,6 +49,8 @@ let food = ["Fries", "Ice-cream", "Pizza"];
 -   Compare the 2 arrays and find common food if any
 
 ## Oppgave 6
+
+---
 
 ```javascript
 let values1 = ["Apple", 1, false];
@@ -50,7 +62,9 @@ let values3 = ["Mars", 9, "Apple"];
 
 ## Oppgave 7
 
-Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+---
+
+-   Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
 
 Test Data :
 
@@ -64,8 +78,44 @@ console.log(first([7, 9, 0, -2], -3));
 
 Expected Output :
 
-7 <br />
-[] <br />
-[7, 9, 0] <br />
-[7, 9, 0, -2] <br />
-[] <br />
+    7
+    []
+    [7, 9, 0]
+    [7, 9, 0, -2]
+    []
+
+## Oppgave 8
+
+---
+
+-   Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
+
+Test Data :
+
+```javascript
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+```
+
+Expected Output :
+
+    -2
+    [9, 0, -2]
+    [7, 9, 0, -2]
+
+## Oppgave 9
+
+---
+
+-   Write a simple JavaScript program to join all elements of the following array into a string.
+
+Sample array :
+
+```javascript
+myColor = ["Red", "Green", "White", "Black"];
+```
+
+Expected Output :
+
+    "Red, Green, White, Black"
