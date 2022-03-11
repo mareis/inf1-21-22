@@ -107,13 +107,13 @@ function tilfeldigArray(n){
 
 -   Utfordring: Unngå duplikater. Hvert tall skal være unikt.
 
-## Oppgave 4
+## Oppgave 5
 
 ---
 
 Lag en funksjon som tar en array som argument og returnerer og skriver ut en reversert utgave.
 
-## Oppgave 5
+## Oppgave 6
 
 ---
 
@@ -124,7 +124,7 @@ let student2Courses = ["Geography", "Spanish", "Programming"];
 
 -   Loop over the 2 arrays and if there are any common courses, if so console.log them
 
-## Oppgave 6
+## Oppgave 7
 
 ---
 
@@ -135,7 +135,7 @@ let food = ["Fries", "Ice-cream", "Pizza"];
 
 -   Compare the 2 arrays and find common food if any
 
-## Oppgave 7
+## Oppgave 8
 
 ---
 
@@ -147,7 +147,7 @@ let values3 = ["Mars", 9, "Apple"];
 
 -   Compare the 3 arrays and find any common elements
 
-## Oppgave 8
+## Oppgave 9
 
 ---
 
@@ -171,7 +171,7 @@ Expected Output :
     [7, 9, 0, -2]
     []
 
-## Oppgave 9
+## Oppgave 10
 
 ---
 
@@ -191,7 +191,7 @@ Expected Output :
     [9, 0, -2]
     [7, 9, 0, -2]
 
-## Oppgave 10
+## Oppgave 11
 
 ---
 
@@ -207,7 +207,7 @@ Expected Output :
 
     "Red, Green, White, Black"
 
-## Oppgave 11
+## Oppgave 12
 
 ---
 
@@ -224,7 +224,7 @@ Expected Output :
 
     [4, 5, 8, 10, 12, 13]
 
-## Oppgave 12
+## Oppgave 13
 
 -   Write a JavaScript function to find an array contains a specific element.
 
@@ -239,7 +239,7 @@ Expected result:
 
     True
 
-## Oppgave 13
+## Oppgave 14
 
 --
 
@@ -255,7 +255,7 @@ Expected result:
 
     [2, 9, 6]
 
-## Oppgave 14 - **Hangman**
+## Oppgave 15 - **Hangman**
 
 -   **Del 1:** Skriv et program som lager en array med n "\_" (under score). Der n er lengden på ordet, ord.
 
