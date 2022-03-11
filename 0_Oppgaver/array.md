@@ -248,7 +248,7 @@ Expected result:
 Test data :
 
 ```javascript
-console.log(remove_array_element([2, 5, 9, 6], 5));
+console.log(removeArrayElement([2, 5, 9, 6], 5));
 ```
 
 Expected result:
