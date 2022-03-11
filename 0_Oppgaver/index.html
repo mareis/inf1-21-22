@@ -1,11 +1,11 @@
 <script>
-    function reverserArray(a) {
-        reversertArray = [];
-        for (let i = a.length - 1; i >= 0; i--) {
-            reversertArray.push(a[i]);
+    function tilfeldigOrd() {
+        let mittAlfabet = ["A", "B", "C", "D", "E", "F", "G"];
+        let ord = "";
+        for (let i = 0; i < 3; i++) {
+            let indeks = Math.floor(Math.random() * mittAlfabet.length);
+            ord += mittAlfabet[index];
         }
-        return reversertArray;
     }
-
-    console.log(reverserArray([5, 4, 3, 2, 1]));
+    console.log(tilfeldigOrd());
 </script>
