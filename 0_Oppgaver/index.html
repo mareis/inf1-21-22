@@ -1,11 +1,18 @@
 <script>
-    function tilfeldigOrd() {
-        let mittAlfabet = ["A", "B", "C", "D", "E", "F", "G"];
-        let ord = "";
-        for (let i = 0; i < 3; i++) {
-            let indeks = Math.floor(Math.random() * mittAlfabet.length);
-            ord += mittAlfabet[index];
-        }
+    let utdragArray = [];
+    for (let i = 1; i <= 30; i++) {
+        utdragArray.push(i);
     }
-    console.log(tilfeldigOrd());
+
+    function tilfeldigArray(n) {
+        returArray = [];
+        for (let i = 0; i < n; i++) {
+            let indeks = Math.floor(Math.random() * utdragArray.length);
+            returArray.push(utdragArray[indeks]);
+            utdragArray.splice(indeks, 1);
+        }
+        return returArray;
+    }
+
+    console.log(tilfeldigArray(10));
 </script>

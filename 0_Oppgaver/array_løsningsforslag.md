@@ -52,6 +52,44 @@ function tilfeldigOrd() {
 console.log(tilfeldigOrd());
 ```
 
+## Oppgave 4
+
+-   Lag en funksjon som genererer en array med n tilfelige tall fra 1-30. n er parameteren til funskjonen
+
+```javascript
+function tilfeldigArray(n) {
+    returArray = [];
+    for (let i = 0; i < n; i++) {
+        let tilfeldig = Math.floor(Math.random() * 30) + 1;
+        returArray.push(tilfeldig);
+    }
+    return returArray;
+}
+
+console.log(tilfeldigArray(10));
+```
+
+-   Utfordring: Unngå duplikater. Hvert tall skal være unikt.
+
+```javascript
+let utdragArray = [];
+for (let i = 1; i <= 30; i++) {
+    utdragArray.push(i);
+}
+
+function tilfeldigArray(n) {
+    returArray = [];
+    for (let i = 0; i < n; i++) {
+        let indeks = Math.floor(Math.random() * utdragArray.length);
+        returArray.push(utdragArray[indeks]);
+        utdragArray.splice(indeks, 1);
+    }
+    return returArray;
+}
+
+console.log(tilfeldigArray(10));
+```
+
 ## Oppgave 5
 
 ---
