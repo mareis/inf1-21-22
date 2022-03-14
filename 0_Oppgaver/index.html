@@ -1,18 +1,12 @@
 <script>
-    let utdragArray = [];
-    for (let i = 1; i <= 30; i++) {
-        utdragArray.push(i);
-    }
+    let food1 = ["Noodle", "Pasta", "Ice-cream"];
+    let food2 = ["Fries", "Ice-cream", "Pizza"];
 
-    function tilfeldigArray(n) {
-        returArray = [];
-        for (let i = 0; i < n; i++) {
-            let indeks = Math.floor(Math.random() * utdragArray.length);
-            returArray.push(utdragArray[indeks]);
-            utdragArray.splice(indeks, 1);
+    for (let i = 0; i < food1.length; i++) {
+        for (let j = 0; j < food2.length; j++) {
+            if (food1[i] === food2[j]) {
+                console.log(`Begge inneholder ${food1[i]}.`);
+            }
         }
-        return returArray;
     }
-
-    console.log(tilfeldigArray(10));
 </script>

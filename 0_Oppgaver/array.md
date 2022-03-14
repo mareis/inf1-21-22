@@ -129,8 +129,8 @@ let student2Courses = ["Geography", "Spanish", "Programming"];
 ---
 
 ```javascript
-let food = ["Noodle", "Pasta", "Ice-cream"];
-let food = ["Fries", "Ice-cream", "Pizza"];
+let food1 = ["Noodle", "Pasta", "Ice-cream"];
+let food2 = ["Fries", "Ice-cream", "Pizza"];
 ```
 
 -   Compare the 2 arrays and find common food if any

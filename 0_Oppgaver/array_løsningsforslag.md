@@ -22,6 +22,8 @@ for (let i = 0; i < planets.length; i++) {
 
 -   Write a JavaScript function to get a random item from an array.
 
+### Løsning
+
 ```javascript
 function tilfeldigElementFraArray(a) {
     let indeks = Math.floor(Math.random() * a.length);
@@ -40,6 +42,8 @@ let mittAlfabet = ["A", "B", "C", "D", "E", "F", "G"];
 
 -   Lag en funksjon som returnerer et tilfeldig "ord" med tre bokstaver fra mittAlfabet.
 
+### Løsning
+
 ```javascript
 function tilfeldigOrd() {
     let mittAlfabet = ["A", "B", "C", "D", "E", "F", "G"];
@@ -56,6 +60,8 @@ console.log(tilfeldigOrd());
 
 -   Lag en funksjon som genererer en array med n tilfelige tall fra 1-30. n er parameteren til funskjonen
 
+### Løsning
+
 ```javascript
 function tilfeldigArray(n) {
     returArray = [];
@@ -70,6 +76,8 @@ console.log(tilfeldigArray(10));
 ```
 
 -   Utfordring: Unngå duplikater. Hvert tall skal være unikt.
+
+### Løsning
 
 ```javascript
 let utdragArray = [];
@@ -96,6 +104,8 @@ console.log(tilfeldigArray(10));
 
 Lag en funksjon som tar en array som argument og returnerer og skriver ut en reversert utgave.
 
+### Løsning
+
 ```javascript
 function reverserArray(a) {
     reversertArray = [];
@@ -106,4 +116,56 @@ function reverserArray(a) {
 }
 
 console.log(reverserArray([5, 4, 3, 2, 1]));
+```
+
+## Oppgave 6
+
+---
+
+```javascript
+let student1Courses = ["Math", "English", "Programming"];
+let student2Courses = ["Geography", "Spanish", "Programming"];
+```
+
+-   Loop over the 2 arrays and if there are any common courses, if so console.log them
+
+### Løsning
+
+```javascript
+let student1Courses = ["Math", "English", "Programming"];
+let student2Courses = ["Geography", "Spanish", "Programming"];
+
+for (let i = 0; i < student1Courses.length; i++) {
+    for (let j = 0; j < student2Courses.length; j++) {
+        if (student1Courses[i] === student2Courses[j]) {
+            console.log(`Begge elevene har ${student1Courses[i]}.`);
+        }
+    }
+}
+```
+
+## Oppgave 7
+
+---
+
+```javascript
+let food1 = ["Noodle", "Pasta", "Ice-cream"];
+let food2 = ["Fries", "Ice-cream", "Pizza"];
+```
+
+-   Compare the 2 arrays and find common food if any
+
+### Løsning
+
+```javascript
+let food1 = ["Noodle", "Pasta", "Ice-cream"];
+let food2 = ["Fries", "Ice-cream", "Pizza"];
+
+for (let i = 0; i < food1.length; i++) {
+    for (let j = 0; j < food2.length; j++) {
+        if (food1[i] === food2[j]) {
+            console.log(`Begge inneholder ${food1[i]}.`);
+        }
+    }
+}
 ```
