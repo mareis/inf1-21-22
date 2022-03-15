@@ -1,11 +1,20 @@
 <script>
-    let food1 = ["Noodle", "Pasta", "Ice-cream"];
-    let food2 = ["Fries", "Ice-cream", "Pizza"];
+    let values1 = ["Apple", 1, false];
+    let values2 = ["Fries", 1, true];
+    let values3 = ["Mars", 1, "Apple"];
 
-    for (let i = 0; i < food1.length; i++) {
-        for (let j = 0; j < food2.length; j++) {
-            if (food1[i] === food2[j]) {
-                console.log(`Begge inneholder ${food1[i]}.`);
+    for (let i = 0; i < values1.length; i++) {
+        for (let j = 0; j < values2.length; j++) {
+            if (values1[i] === values2[j]) {
+                console.log(`${values1[i]} eksisterer i flere array`);
+            }
+            for (let k = 0; k < values3.length; k++) {
+                if (values2[j] === values3[k]) {
+                    console.log(`${values2[i]} eksisterer i flere array`);
+                }
+                if (values1[i] === values3[k] && j == 0) {
+                    console.log(`${values1[i]} eksisterer i flere array`);
+                }
             }
         }
     }

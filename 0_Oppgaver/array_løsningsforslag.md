@@ -169,3 +169,45 @@ for (let i = 0; i < food1.length; i++) {
     }
 }
 ```
+
+## Oppgave 8
+
+---
+
+```javascript
+let values1 = ["Apple", 1, false];
+let values2 = ["Fries", 2, true];
+let values3 = ["Mars", 9, "Apple"];
+```
+
+-   Compare the 3 arrays and find any common elements
+
+### Løsning
+
+```javascript
+
+```
+
+## Oppgave 9
+
+---
+
+-   Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+
+Test Data :
+
+```javascript
+console.log(first([7, 9, 0, -2]));
+console.log(first([], 3));
+console.log(first([7, 9, 0, -2], 3));
+console.log(first([7, 9, 0, -2], 6));
+console.log(first([7, 9, 0, -2], -3));
+```
+
+Expected Output :
+
+    7
+    []
+    [7, 9, 0]
+    [7, 9, 0, -2]
+    []
