@@ -283,6 +283,18 @@ Expected Output :
     [9, 0, -2]
     [7, 9, 0, -2]
 
+### Løsning alternativ 1
+
+```javascript
+function first(a, n = 1) {
+    return a.slice(n, a.length);
+}
+
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+```
+
 ### Løsning alternativ 2
 
 ```javascript
