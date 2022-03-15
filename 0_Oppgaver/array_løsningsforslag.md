@@ -185,8 +185,28 @@ let values3 = ["Mars", 9, "Apple"];
 ### Løsning
 
 ```javascript
+let values1 = ["Apple", 1, false];
+let values2 = ["Fries", 2, true];
+let values3 = ["Mars", 9, "Apple"];
 
+for (let i = 0; i < values1.length; i++) {
+    for (let j = 0; j < values2.length; j++) {
+        if (values1[i] === values2[j]) {
+            console.log(`${values1[i]} eksisterer i flere array`);
+        }
+        for (let k = 0; k < values3.length; k++) {
+            if (values2[j] === values3[k]) {
+                console.log(`${values2[i]} eksisterer i flere array`);
+            }
+            if (values1[i] === values3[k] && j == 0) {
+                console.log(`${values1[i]} eksisterer i flere array`);
+            }
+        }
+    }
+}
 ```
+
+-   Denne løsningen har mange svakheter og vil i mange tilfeller ikke fungere optimalt. Kan du finne tilfellen? Finnes det en måte å løse det på?
 
 ## Oppgave 9
 
@@ -201,13 +221,44 @@ console.log(first([7, 9, 0, -2]));
 console.log(first([], 3));
 console.log(first([7, 9, 0, -2], 3));
 console.log(first([7, 9, 0, -2], 6));
-console.log(first([7, 9, 0, -2], -3));
 ```
 
 Expected Output :
 
-    7
+    [7]
     []
     [7, 9, 0]
     [7, 9, 0, -2]
-    []
+
+### Løsning alternativ 1
+
+```javascript
+function first(a, n = 1) {
+    return a.slice(0, n);
+}
+
+console.log(first([7, 9, 0, -2]));
+console.log(first([], 3));
+console.log(first([7, 9, 0, -2], 3));
+console.log(first([7, 9, 0, -2], 6));
+```
+
+### Løsning alternativ 2
+
+```javascript
+function first(a, n = 1) {
+    if (n > a.length) {
+        return a;
+    } else {
+        returArray = [];
+        for (let i = 0; i < n; i++) {
+            returArray.push(a[i]);
+        }
+        return returArray;
+    }
+}
+console.log(first([7, 9, 0, -2]));
+console.log(first([], 3));
+console.log(first([7, 9, 0, -2], 3));
+console.log(first([7, 9, 0, -2], 6));
+```
