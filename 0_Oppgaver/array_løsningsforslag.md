@@ -326,6 +326,10 @@ Sample array :
 let myColor = ["Red", "Green", "White", "Black"];
 ```
 
+Expected Output :
+
+    "Red, Green, White, Black"
+
 ### Løsning alternativ 1
 
 ```javascript
@@ -348,4 +352,41 @@ for (let i = 0; i < myColor.length; i++) {
 }
 
 console.log(myColorString);
+```
+
+## Oppgave 12
+
+---
+
+-   There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays.
+
+Sample array :
+
+```javascript
+array1 = [1, 0, 2, 3, 4];
+array2 = [3, 5, 6, 7, 8, 13];
+```
+
+Expected Output :
+
+    [4, 5, 8, 10, 12, 13]
+
+### Løsning
+
+```javascript
+array1 = [1, 0, 2, 3, 4];
+array2 = [3, 5, 6, 7, 8, 13];
+
+if (array1.length >= array2.length) {
+    console.log(add(array1, array2));
+} else {
+    console.log(add(array2, array1));
+}
+
+function add(a, b) {
+    for (let i = 0; i < b.length; i++) {
+        a[i] += b[i];
+    }
+    return a;
+}
 ```
