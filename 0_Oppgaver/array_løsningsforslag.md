@@ -262,3 +262,42 @@ console.log(first([], 3));
 console.log(first([7, 9, 0, -2], 3));
 console.log(first([7, 9, 0, -2], 6));
 ```
+
+## Oppgave 10
+
+---
+
+-   Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
+
+Test Data :
+
+```javascript
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+```
+
+Expected Output :
+
+    -2
+    [9, 0, -2]
+    [7, 9, 0, -2]
+
+### Løsning alternativ 2
+
+```javascript
+function last(a, n = 1) {
+    if (n > a.length) {
+        return a;
+    } else {
+        returArray = [];
+        for (let i = a.length - n; i < a.length; i++) {
+            returArray.push(a[i]);
+        }
+        return returArray;
+    }
+}
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+```

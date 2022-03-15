@@ -1,17 +1,16 @@
 <script>
-    function first(a, n = 1) {
+    function last(a, n = 1) {
         if (n > a.length) {
             return a;
         } else {
             returArray = [];
-            for (let i = 0; i < n; i++) {
+            for (let i = a.length - n; i < a.length; i++) {
                 returArray.push(a[i]);
             }
             return returArray;
         }
     }
-    console.log(first([7, 9, 0, -2]));
-    console.log(first([], 3));
-    console.log(first([7, 9, 0, -2], 3));
-    console.log(first([7, 9, 0, -2], 6));
+    console.log(last([7, 9, 0, -2]));
+    console.log(last([7, 9, 0, -2], 3));
+    console.log(last([7, 9, 0, -2], 6));
 </script>
