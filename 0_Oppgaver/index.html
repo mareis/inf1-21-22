@@ -1,24 +1,12 @@
 <script>
-    function last(a, n = 1) {
-        if (n > a.length) {
-            return a;
-        } else {
-            returArray = [];
-            for (let i = a.length - n; i < a.length; i++) {
-                returArray.push(a[i]);
-            }
-            return returArray;
+    let myColor = ["Red", "Green", "White", "Black"];
+    myColorString = "";
+    for (let i = 0; i < myColor.length; i++) {
+        myColorString += myColor[i];
+        if (i < myColor.length - 1) {
+            myColorString += ", ";
         }
     }
-    console.log(last([7, 9, 0, -2]));
-    console.log(last([7, 9, 0, -2], 3));
-    console.log(last([7, 9, 0, -2], 6));
 
-    function first(a, n = 1) {
-        return a.slice(n, a.length);
-    }
-
-    console.log(last([7, 9, 0, -2]));
-    console.log(last([7, 9, 0, -2], 3));
-    console.log(last([7, 9, 0, -2], 6));
+    console.log(myColorString);
 </script>

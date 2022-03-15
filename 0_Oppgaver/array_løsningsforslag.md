@@ -313,3 +313,39 @@ console.log(last([7, 9, 0, -2]));
 console.log(last([7, 9, 0, -2], 3));
 console.log(last([7, 9, 0, -2], 6));
 ```
+
+## Oppgave 11
+
+---
+
+-   Write a simple JavaScript program to join all elements of the following array into a string.
+
+Sample array :
+
+```javascript
+let myColor = ["Red", "Green", "White", "Black"];
+```
+
+### Løsning alternativ 1
+
+```javascript
+let myColor = ["Red", "Green", "White", "Black"];
+myColorString = myColor.join(", ");
+
+console.log(myColorString);
+```
+
+### Løsning alternativ 2
+
+```javascript
+let myColor = ["Red", "Green", "White", "Black"];
+myColorString = "";
+for (let i = 0; i < myColor.length; i++) {
+    myColorString += myColor[i];
+    if (i < myColor.length - 1) {
+        myColorString += ", ";
+    }
+}
+
+console.log(myColorString);
+```
