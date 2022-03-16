@@ -50,8 +50,9 @@ function tilfeldigOrd() {
     let ord = "";
     for (let i = 0; i < 3; i++) {
         let indeks = Math.floor(Math.random() * mittAlfabet.length);
-        ord += mittAlfabet[index];
+        ord += mittAlfabet[indeks];
     }
+    return ord;
 }
 console.log(tilfeldigOrd());
 ```
