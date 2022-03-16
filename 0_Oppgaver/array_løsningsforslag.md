@@ -390,3 +390,35 @@ function add(a, b) {
     return a;
 }
 ```
+
+## Oppgave 13
+
+-   Write a JavaScript function to find an array contains a specific element.
+
+Test data :
+
+```javascript
+let arr = [2, 5, 9, 6];
+console.log(contains(arr, 5));
+```
+
+Expected result:
+
+    True
+
+### Løsning
+
+```javascript
+let arr = [2, 5, 9, 6];
+
+function contains(a, e) {
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == e) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(contains(arr, 5));
+```

@@ -1,17 +1,14 @@
 <script>
-    array1 = [1, 0, 2, 3, 4];
-    array2 = [3, 5, 6, 7, 8, 13];
+    let arr = [2, 5, 9, 6];
 
-    if (array1.length >= array2.length) {
-        console.log(add(array1, array2));
-    } else {
-        console.log(add(array2, array1));
-    }
-
-    function add(a, b) {
-        for (let i = 0; i < b.length; i++) {
-            a[i] += b[i];
+    function contains(a, e) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == e) {
+                return true;
+            }
         }
-        return a;
+        return false;
     }
+
+    console.log(contains(arr, 5));
 </script>

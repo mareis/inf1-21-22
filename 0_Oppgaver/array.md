@@ -229,13 +229,13 @@ Expected Output :
 Test data :
 
 ```javascript
-arr = [2, 5, 9, 6];
+let arr = [2, 5, 9, 6];
 console.log(contains(arr, 5));
 ```
 
 Expected result:
 
-    True
+    true
 
 ## Oppgave 14
 
@@ -260,13 +260,13 @@ Expected result:
 Testdata :
 
 ```javascript
-ord = "javascript";
+let ord = "javascript";
 ```
 
 Bruk en løkke til å generere:
 
 ```javascript
-utskrift = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
+let utskrift = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"];
 ```
 
 -   **Del 2:** Utvid programmet ved å skrive en funksjon
