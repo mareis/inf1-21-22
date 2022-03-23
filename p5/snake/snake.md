@@ -99,7 +99,7 @@ Kopier koden over til script-tagen over setup-funksjonen.
 
 ```javascript
 for (let i = 0; i < lengde; i++) {
-  x.push(xStart + i * diff);
+  x.push(xStart + i * str);
   y.push(yStart);
 }
 ```
@@ -116,7 +116,7 @@ Vi bruker p5.js sin [`square()`](https://p5js.org/reference/#/p5/square) til å 
 
 ```javascript
 for (let i = 0; i < lengde; i++) {
-  square(x[i], y[i], diff);
+  square(x[i], y[i], str);
 }
 ```
 
