@@ -12,7 +12,7 @@ Før man begynner å programmere er det lurt å lage en plan, en skisse og en pr
 
 Finn frem et ruteark og svar på følgende:
 
-- Hvordan representere leddene i slangen?
+- Hvordan representeres leddene i slangen?
 - Hvordan lagre koordinatene til hvert ledd i slangen?
 - Hvordan oppdatere koordinatene til hvert ledd i slangen.
 
