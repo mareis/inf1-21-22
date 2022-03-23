@@ -311,3 +311,61 @@ function keyPressed() {
   }
 }
 ```
+
+## Oppgave 8 - Frukt
+
+```javascript
+  function nyFrukt() {
+    xFrukt = tilfeldig x-koordinat
+    yFrukt = tilfeldig y-koordinat
+  }
+
+```
+
+- Legg til funksjonen nederst i script-tagen og fullfør koden.
+- Leg til `nyFrukt();`kall i `setup` og
+
+```javascript
+fill(255, 0, 0);
+square(xFrukt, yFrukt, str);
+```
+
+i draw
+
+## Oppgave 9 - Spise frukt
+
+```javascript
+function spiseFrukt() {
+  let xHode = x[x.length - 1];
+  let yHode = y[y.length - 1];
+
+  if (xHode === xFrukt && yHode === yFrukt) {
+    lengde++;
+
+    x.unshift(x[0]);
+    y.unshift(y[0]);
+    nyFrukt();
+  }
+}
+```
+
+- Forklar koden over.
+- Legg til `spiseFrukt();`nederst i `draw`-funksjonen.
+
+## Oppgave 10 - Kolisjon
+
+```javascript
+function kollisjon() {
+  let xHode = x[x.length - 1];
+  let yHode = y[y.length - 1];
+
+  for (let i = 0; i < lengde - 1; i++) {
+    if (x[i] === xHode && y[i] === yHode) {
+      noLoop();
+    }
+  }
+}
+```
+
+- Forklar koden over.
+- Legg til `kollisjon();`nederst i `draw`-funksjonen.
