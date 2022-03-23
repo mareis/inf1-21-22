@@ -1,0 +1,155 @@
+<script>
+  console.log("\nOppgave 1 \n-----------");
+  let byer = [
+    "Venezia",
+    "Liverpool",
+    "New York",
+    "Lisboa",
+    "Berlin",
+    "San Francisco",
+    "Amsterdam",
+  ];
+
+  //1 a)
+  byer.push("Budapest");
+
+  //1 b)
+  for (let i = 0; i < byer.length; i++) {
+    console.log(byer[i]);
+  }
+
+  //1 c)
+
+  function tilfeldigBy(nr) {
+    let indeks = Math.floor(Math.random() * byer.length);
+    console.log(`Din ${nr}. destinasjon er ${byer[indeks]}`);
+    byer.splice(indeks, 1);
+  }
+
+  //1 d)
+  let l = byer.length;
+
+  for (let i = 0; i < l; i++) {
+    tilfeldigBy(i + 1);
+  }
+
+  console.log("\nOppgave 2 \n-----------");
+
+  let partall = [];
+  //2 a)
+  for (let i = 2; i <= 30; i += 2) {
+    partall.push(i);
+  }
+
+  //2 b)
+  for (let i = 0; i < partall.length; i++) {
+    let tall = partall[i];
+    if (tall > 8 && tall < 22) {
+      console.log(tall);
+    }
+  }
+
+  console.log("\nOppgave 3 \n-----------");
+
+  let tall = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+
+  //3 a)
+  let sum = 0;
+  for (let i = 0; i < tall.length; i++) {
+    sum += tall[i];
+  }
+  console.log(`Sum: ${sum}`);
+
+  //3 b)
+  for (let i = 0; i < tall.length; i++) {
+    console.log(`${i}: ${tall[i]}`);
+  }
+
+  //3 c)
+  for (let i = 0; i < 10; i++) {
+    let siste = tall.length - 1;
+    tall.push(tall[siste - 1] + tall[siste]);
+  }
+  console.log(tall);
+
+  console.log("\nOppgave 4 \n-----------");
+  //4 a)
+  function tilfeldig() {
+    return Math.floor(Math.random() * 10);
+  }
+  //4 b)
+  function kodeforslag() {
+    let kode = [];
+    for (let i = 0; i < 4; i++) {
+      kode.push(tilfeldig());
+    }
+    return kode;
+  }
+
+  //4 c)
+  function like(a, b) {
+    if (a.length == b.length) {
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] != b[i]) {
+          return false;
+        }
+      }
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  let minKode = [6, 4, 1, 5];
+  let generertKode;
+  let funnet = false;
+  let antall = 0;
+
+  while (!funnet) {
+    antall++;
+    generertKode = kodeforslag();
+    funnet = like(generertKode, minKode);
+  }
+  console.log(`Antall forsøk: ${antall}`);
+  console.log(`Koden er ${generertKode}`);
+
+  console.log("\nOppgave 5 \n-----------");
+
+  let antallSkuddår = 0;
+  let år = 2022;
+  let skuddår = [];
+
+  while (antallSkuddår < 50) {
+    if (år % 4 == 0) {
+      if (år % 100 == 0) {
+        if (år % 400 == 0) {
+          skuddår.push(år);
+          antallSkuddår++;
+        }
+      } else {
+        skuddår.push(år);
+        antallSkuddår++;
+      }
+    }
+    år++;
+  }
+  console.log(skuddår);
+
+  console.log("\nOppgave 6 \n-----------");
+
+  function nærmestNull(arr) {
+    let minst = Math.abs(arr[0]);
+    let minstIndeks = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (Math.abs(arr[i]) < minst) {
+        minst = Math.abs(arr[i]);
+        minstIndeks = i;
+      }
+    }
+    return arr[minstIndeks];
+  }
+
+  console.log(nærmestNull([1, -2, -8, 4, 5]));
+  console.log(nærmestNull([10, -2, 7, 4, 1, -1, -1, 2, 9]));
+  console.log(nærmestNull([23, 18, 17, 22, 15, 20, 20]));
+</script>

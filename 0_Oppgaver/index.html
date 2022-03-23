@@ -1,14 +1,39 @@
 <script>
-    let arr = [2, 5, 9, 6];
+    // a)
+    function tilfeldig() {
+        return Math.floor(Math.random() * 10 + 1);
+    }
+    // b)
+    function fyllArray() {
+        a = [];
+        for (let i = 0; i < 1000; i++) {
+            a.push(tilfeldig());
+        }
+        return a;
+    }
+    let arrayMedTilfeldigeTall = fyllArray();
+    console.log(arrayMedTilfeldigeTall);
 
-    function contains(a, e) {
-        for (let i = 0; i < a.length; i++) {
-            if (a[i] == e) {
-                return true;
+    // c)
+    function fjern7(a) {
+        let fjernet = 0;
+        for (let i = a.length; i >= 0; i--) {
+            if (a[i] == 7) {
+                a.splice(i, 1);
+                fjernet++;
             }
         }
-        return false;
+        console.log(`Det ble fjernet ${fjernet} 7-ere`);
+        return a;
     }
 
-    console.log(contains(arr, 5));
+    let arrayUtenSyvere = fjern7(arrayMedTilfeldigeTall);
+
+    // d)
+    function skrivUt(a) {
+        for (let i = 0; i < a.length; i++) {
+            console.log(`${i}: ${a[i]}`);
+        }
+    }
+    skrivUt(arrayUtenSyvere);
 </script>
