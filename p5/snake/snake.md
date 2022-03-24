@@ -36,7 +36,7 @@ Kan du bruke push og shift for å oppdatere aryayene? Hvordan?
 
 ---
 
-## Setup og draw
+## Oppgave 1 - Setup og draw
 
 Strukturen og oppsettet i p5.js
 
@@ -54,13 +54,13 @@ Strukturen og oppsettet i p5.js
 </script>
 ```
 
-### Oppgave 1
-
-Forklar koden over og prediker resultatet. Kopier kodesnuttene over i Visual Studio Code og kjør programmet. Stemte det?
+- Forklar koden over og prediker resultatet.
+- Kopier kodesnuttene over i Visual Studio Code og kjør programmet.
+- Stemte det?
 
 ---
 
-## Globale konstanter og variabler
+## Oppgave 2 - Globale konstanter og variabler
 
 Over `setup-funksjonen` oppretter vi noen globale konstanter og variabler vi skal bruke og oppdatere i de ulike funksjonene våre senere i programmet.
 
@@ -87,13 +87,11 @@ let xFrukt = 0;
 let yFrukt = 0;
 ```
 
-### Oppgave 2
-
-Kopier koden over til script-tagen over setup-funksjonen.
+- Kopier koden over til script-tagen over setup-funksjonen.
 
 ---
 
-## Slangen
+## Oppgave 3- Slangen
 
 `setup-funksjonen`
 
@@ -104,13 +102,11 @@ for (let i = 0; i < lengde; i++) {
 }
 ```
 
-### Oppgave 3
-
-Forklar hva koden over gjør. Kopier den til nederst i `setup-funksjonen` og bruk en `console.log` for å skrive ut resultatet.
+- Forklar hva koden over gjør. Kopier den til nederst i `setup-funksjonen` og bruk en `console.log` for å skrive ut resultatet.
 
 ---
 
-## Tegne slangen
+## Oppgave 4 - Tegne slangen
 
 Vi bruker p5.js sin [`square()`](https://p5js.org/reference/#/p5/square) til å tegne leddene til slangen.
 
@@ -120,19 +116,16 @@ for (let i = 0; i < lengde; i++) {
 }
 ```
 
-### Oppgave 4
+- Forklar koden over og prediker resultatet. Koper så koden neders i `draw-funksjonen`.
+- Stemte det?
 
-Forklar koden over og prediker resultatet. Koper så koden neders i `draw-funksjonen`. Stemte det?
-
-Lag en skisse som beskriver og viser sammenhengen mellom `x` -og `y`-array og tegning av leddene med `square`.
+- Lag en skisse som beskriver og viser sammenhengen mellom `x` -og `y`-array og tegning av leddene med `square`.
 
 ---
 
-## Bevegelse
+## Oppgave 5 - Bevegelse
 
-### Oppgave 5
-
-Lag en skisse og prøv å tenk deg en måte du kan oppdatere `x`-koordinatene til leddene til slangen når retningen er `"høyre"`.
+- Lag en skisse og prøv å tenk deg en måte du kan oppdatere `x`-koordinatene til leddene til slangen når retningen er `"høyre"`.
 
 ---
 
@@ -153,15 +146,13 @@ function oppdaterKoordinater() {
 }
 ```
 
-### Oppgave 6
-
 - Forklar hver linje med kode over.
 - Legg til et kall på funksjonen `oppdaterKoordinater()` nederst i `draw`-funksjonen. Hva skjer? Forklar hvorfor.
 - Lag tilsvarende if-setninger for når retning er `"venstre"`, `"opp"`, og `"ned"`.
 
 ---
 
-## Piltaster
+## Oppgave 6 - Piltaster
 
 ```javascript
 function keyPressed() {
@@ -172,8 +163,6 @@ function keyPressed() {
   }
 }
 ```
-
-### Oppgave 7
 
 - Forklar koden over.
 - Kopier koden til nederst i script-tagen.
@@ -189,7 +178,7 @@ keyCode === LEFT_ARROW && retning != "høyre";
 
 - Fiks opp i alle valg-setningene slik at du ikke kan snu slangen i motsatt retning.
 
-Nå forsvinner slangen ut av rammen. Hvoran kan vi løse det?
+- Nå forsvinner slangen ut av rammen. Hvoran kan vi løse det?
 
 En måte er å la slangen komme ut igjen på motsatt side.
 
@@ -203,8 +192,6 @@ if (retning == "høyre") {
   y.push(yHode);
 }
 ```
-
-### Oppgave 7
 
 - Forklar endringene som er gjort med valgsetningen i `oppdaterKoordinater`.
 - Gjør tilsvarende endringer for de andre valg-setningene i `oppdaterKoordinater`.
@@ -312,7 +299,7 @@ function keyPressed() {
 }
 ```
 
-## Oppgave 8 - Frukt
+## Oppgave 7 - Frukt
 
 ```javascript
   function nyFrukt() {
@@ -332,7 +319,7 @@ square(xFrukt, yFrukt, str);
 
 i draw
 
-## Oppgave 9 - Spise frukt
+## Oppgave 8 - Spise frukt
 
 ```javascript
 function spiseFrukt() {
@@ -352,7 +339,7 @@ function spiseFrukt() {
 - Forklar koden over.
 - Legg til `spiseFrukt();`nederst i `draw`-funksjonen.
 
-## Oppgave 10 - Kolisjon
+## Oppgave 9 - Kolisjon
 
 ```javascript
 function kollisjon() {
