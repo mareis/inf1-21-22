@@ -483,6 +483,7 @@ function spiseFrukt() {
 
     x.unshift(x[0]);
     y.unshift(y[0]);
+
     nyFrukt();
   }
 }
