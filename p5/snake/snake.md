@@ -30,7 +30,7 @@ Kan du bruke push og shift for å oppdatere aryayene? Hvordan?
 
 ## p5.js
 
-Les mer om p5.js [her](https://p5js.org)
+For å lage spillet skl vi bruke p5.js. Les mer om p5.js [her](https://p5js.org).
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
@@ -95,7 +95,7 @@ let yFrukt = 0;
 
 ---
 
-## Oppgave 3- Slangen
+## Oppgave 3 - Slangen
 
 `setup-funksjonen`
 
@@ -203,6 +203,8 @@ if (retning == "høyre") {
 ---
 
 ## Oppsumering
+
+Så langt vi har kommet til nå.
 
 ```javascript
 const xStart = 0;
