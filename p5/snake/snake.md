@@ -30,6 +30,8 @@ Kan du bruke push og shift for å oppdatere aryayene? Hvordan?
 
 ## p5.js
 
+Les mer om p5.js [her](https://p5js.org)
+
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
 ```
@@ -41,6 +43,8 @@ Kan du bruke push og shift for å oppdatere aryayene? Hvordan?
 Strukturen og oppsettet i p5.js
 
 ```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+
 <script>
   function setup() {
     createCanvas(500, 500);
