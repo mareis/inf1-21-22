@@ -363,7 +363,7 @@ function kollisjon() {
 - Forklar koden over.
 - Legg til `kollisjon();`nederst i `draw`-funksjonen.
 
-## Oppsumering
+## Hele koden
 
 ```javascript
 const xStart = 0;
