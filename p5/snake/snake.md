@@ -470,8 +470,8 @@ function keyPressed() {
 }
 
 function nyFrukt() {
-  xFrukt = Math.floor(Math.random() * 40) * str + 50;
-  yFrukt = Math.floor(Math.random() * 40) * str + 50;
+  xFrukt = Math.floor(Math.random() * 49) * str;
+  yFrukt = Math.floor(Math.random() * 49) * str;
 }
 
 function spiseFrukt() {
