@@ -390,7 +390,6 @@ let yFrukt = 0;
 function setup() {
   createCanvas(500, 500);
   frameRate(10);
-  //noStroke();
 
   for (let i = 0; i < lengde; i++) {
     x.push(xStart + i * str);
