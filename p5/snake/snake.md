@@ -369,3 +369,133 @@ function kollisjon() {
 
 - Forklar koden over.
 - Legg til `kollisjon();`nederst i `draw`-funksjonen.
+
+## Oppsumering
+
+```javascript
+const xStart = 0;
+const yStart = 250;
+
+let x = [];
+let y = [];
+
+const str = 10;
+
+let lengde = 10;
+let retning = "høyre";
+
+let xFrukt = 0;
+let yFrukt = 0;
+
+function setup() {
+  createCanvas(500, 500);
+  frameRate(10);
+  //noStroke();
+
+  for (let i = 0; i < lengde; i++) {
+    x.push(xStart + i * str);
+    y.push(yStart);
+  }
+
+  nyFrukt();
+}
+
+function draw() {
+  background(0);
+  fill(255);
+  for (let i = 0; i < lengde; i++) {
+    square(x[i], y[i], str);
+  }
+  fill(255, 0, 0);
+  square(xFrukt, yFrukt, str);
+
+  oppdaterKoordinater();
+  spiseFrukt();
+  kollisjon();
+}
+
+function oppdaterKoordinater() {
+  let xHode = x[lengde - 1];
+  let yHode = y[lengde - 1];
+
+  if (retning == "høyre") {
+    if (xHode + str >= 500) {
+      x.push(0);
+    } else {
+      x.push(xHode + str);
+    }
+    y.push(yHode);
+  }
+
+  if (retning == "opp") {
+    if (yHode - str <= 0) {
+      y.push(500);
+    } else {
+      y.push(yHode - str);
+    }
+    x.push(xHode);
+  }
+
+  if (retning == "venstre") {
+    if (xHode + str <= 0) {
+      x.push(500);
+    } else {
+      x.push(xHode - str);
+    }
+    y.push(yHode);
+  }
+
+  if (retning == "ned") {
+    if (yHode - str >= 500) {
+      y.push(0);
+    } else {
+      y.push(yHode + str);
+    }
+    x.push(xHode);
+  }
+
+  x.shift();
+  y.shift();
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW && retning != "høyre") {
+    retning = "venstre";
+  } else if (keyCode === RIGHT_ARROW && retning != "venstre") {
+    retning = "høyre";
+  } else if (keyCode === UP_ARROW && retning != "ned") {
+    retning = "opp";
+  } else if (keyCode === DOWN_ARROW && retning != "opp") {
+    retning = "ned";
+  }
+}
+
+function nyFrukt() {
+  xFrukt = Math.floor(Math.random() * 40) * str + 50;
+  yFrukt = Math.floor(Math.random() * 40) * str + 50;
+}
+
+function spiseFrukt() {
+  let xHode = x[x.length - 1];
+  let yHode = y[y.length - 1];
+
+  if (xHode === xFrukt && yHode === yFrukt) {
+    lengde++;
+
+    x.unshift(x[0]);
+    y.unshift(y[0]);
+    nyFrukt();
+  }
+}
+
+function kollisjon() {
+  let xHode = x[x.length - 1];
+  let yHode = y[y.length - 1];
+
+  for (let i = 0; i < lengde - 1; i++) {
+    if (x[i] === xHode && y[i] === yHode) {
+      noLoop();
+    }
+  }
+}
+```
