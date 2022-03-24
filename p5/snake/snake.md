@@ -309,7 +309,7 @@ function keyPressed() {
 
 ```
 
-- Legg til funksjonen nederst i script-tagen og fullfør koden.
+- Legg til funksjonen nederst i script-tagen og fullfør koden. ALtså bytt ut `tilfeldig x-koordinat`. Husk at ormen sinene firkanter flytter seg `str` om gangen.
 - Leg til `nyFrukt();`kall i `setup` og
 
 ```javascript
