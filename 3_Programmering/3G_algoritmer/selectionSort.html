@@ -1,0 +1,33 @@
+<script>
+  function randomArray(n) {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      arr.push(Math.floor(Math.random() * 101) - 50);
+    }
+    return arr;
+  }
+
+  let tilSortering = randomArray(5);
+  console.log(tilSortering);
+
+  function selectionSort(arr) {
+    let temp;
+    minIndeks = 0;
+    for (let i = 0; i < arr.length; i++) {
+      minIndeks = i;
+      for (let j = i; j < arr.length; j++) {
+        if (arr[j] < arr[minIndeks]) {
+          minIndeks = j;
+        }
+      }
+
+      temp = arr[i];
+      arr[i] = arr[minIndeks];
+      arr[minIndeks] = temp;
+    }
+    return arr;
+  }
+
+  let sortertArray = selectionSort(tilSortering);
+  console.log(sortertArray);
+</script>

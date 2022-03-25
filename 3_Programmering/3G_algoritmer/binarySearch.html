@@ -1,0 +1,23 @@
+<script>
+  let sortertArray = [-10, -4, 3, 6, 7, 18, 18, 25, 30, 31, 34];
+
+  function binarySearch(arr, n) {
+    let høy = arr.length - 1;
+    let lav = 0;
+    let mid;
+
+    for (let i = 0; i < arr.length; i++) {
+      mid = Math.floor((høy + lav) / 2);
+
+      if (arr[mid] > n) {
+        høy = mid - 1;
+      } else if (arr[mid] < n) {
+        lav = mid + 1;
+      } else {
+        return [mid, arr[mid]];
+      }
+    }
+  }
+
+  console.log(binarySearch(sortertArray, 25));
+</script>

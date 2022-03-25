@@ -1,0 +1,29 @@
+<script>
+  function randomArray(n) {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      arr.push(Math.floor(Math.random() * 101) - 50);
+    }
+    return arr;
+  }
+
+  let tilSortering = randomArray(20);
+  console.log(tilSortering);
+
+  function bubbleSort(arr) {
+    let temp;
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length - i; j++) {
+        if (arr[j + 1] < arr[j]) {
+          temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+
+  let sortertArray = bubbleSort(tilSortering);
+  console.log(sortertArray);
+</script>

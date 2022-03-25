@@ -1,0 +1,18 @@
+<script>
+  let A = [2, 4, 5, 7, 9, 10, 17, 92, 104, 200];
+  const target = 17;
+  let lo = 0;
+  let hi = A.length - 1;
+  while (lo <= hi) {
+    let mid = Math.floor((lo + hi) / 2);
+    console.log(lo, mid, hi);
+    if (A[mid] > target) {
+      hi = mid - 1;
+    } else if (A[mid] < target) {
+      lo = mid + 1;
+    } else {
+      console.log(`Tallet ${A[mid]} er funnet på index ${mid}`);
+      break;
+    }
+  }
+</script>
