@@ -7,7 +7,7 @@
     return arr;
   }
 
-  let tilSortering = randomArray(20);
+  let tilSortering = randomArray(10000);
   console.log(tilSortering);
 
   function bubbleSort(arr) {
@@ -24,6 +24,8 @@
     return arr;
   }
 
+  console.time("bubbleSort");
   let sortertArray = bubbleSort(tilSortering);
   console.log(sortertArray);
+  console.timeEnd("bubbleSort");
 </script>

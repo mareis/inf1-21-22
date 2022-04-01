@@ -1,0 +1,38 @@
+<script>
+  function fib(n) {
+    if (n <= 2) return 1;
+    return fib(n - 2) + fib(n - 1);
+  }
+  console.time("rekursjon");
+  console.log(fib(40));
+  console.timeEnd("rekursjon");
+
+  function fib2(n) {
+    if (n <= 2) return 1;
+    let a = 1;
+    let b = 1;
+    let c;
+    for (let i = 2; i < n; i++) {
+      c = a + b;
+      a = b;
+      b = c;
+    }
+    return c;
+  }
+
+  console.time("variabler");
+  console.log(fib2(40));
+  console.timeEnd("variabler");
+
+  function fib3(n) {
+    let a = [1, 1];
+    for (let i = 2; i < n; i++) {
+      a.push(a[i - 2] + a[i - 1]);
+    }
+    return a[a.length - 1];
+  }
+
+  console.time("array");
+  console.log(fib3(40));
+  console.timeEnd("array");
+</script>

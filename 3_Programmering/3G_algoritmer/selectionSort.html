@@ -7,8 +7,7 @@
     return arr;
   }
 
-  let tilSortering = randomArray(5);
-  console.log(tilSortering);
+  let tilSortering = randomArray(20000);
 
   function selectionSort(arr) {
     let temp;
@@ -28,6 +27,27 @@
     return arr;
   }
 
+  console.time("selectionSort");
   let sortertArray = selectionSort(tilSortering);
   console.log(sortertArray);
+  console.timeEnd("selectionSort");
+
+  function bubbleSort(arr) {
+    let temp;
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length - i; j++) {
+        if (arr[j + 1] < arr[j]) {
+          temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+        }
+      }
+    }
+    return arr;
+  }
+
+  console.time("bubbleSort");
+  sortertArray = bubbleSort(tilSortering);
+  console.log(sortertArray);
+  console.timeEnd("bubbleSort");
 </script>
