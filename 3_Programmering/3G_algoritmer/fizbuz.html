@@ -1,0 +1,11 @@
+<script>
+  let t = "";
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0) t += "Fizz";
+    if (i % 5 == 0) t += "Buzz";
+    if (t == "") t = i;
+
+    console.log(t);
+    t = "";
+  }
+</script>
