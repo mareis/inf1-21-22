@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domen</title>
+    <style>
+      #ut {
+        width: 150px;
+        height: 60px;
+        background-color: #f00;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="inkrement()">Øk tallet</button>
+    <button id="endreFarge">Endre farge</button>
+
+    <div id="ut">0</div>
+
+    <script>
+      let tall = 0;
+      let utE = document.querySelector("#ut");
+      let endreFargeKnapp = document.querySelector("#endreFarge");
+
+      function inkrement() {
+        tall++;
+        utE.innerHTML = tall;
+        console.log(tall);
+
+        if (tall == 10) {
+          utE.style.backgroundColor = "green";
+        }
+      }
+
+      endreFargeKnapp.addEventListener("click", endreFarge);
+
+      function endreFarge() {
+        let farger = ["red", "blue", "green", "yellow"];
+        let random = Math.floor(Math.random() * farger.length);
+        utE.style.backgroundColor = farger[random];
+      }
+    </script>
+  </body>
+</html>

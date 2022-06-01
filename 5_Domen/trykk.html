@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="tall">0</h1>
+    <p id="tid"></p>
+
+    <script>
+      let tall = 0;
+      let ms = 0;
+      let klokke;
+
+      document.addEventListener("keyup", function (e) {
+        if (e.key == " " && tall < 50) {
+          tall++;
+        }
+        if (tall == 1) {
+          klokke = setInterval(function () {
+            ms++;
+            document.getElementById("tid").innerHTML = ms;
+          }, 1);
+        }
+        document.getElementById("tall").innerHTML = tall;
+
+        if (tall >= 50) {
+          clearInterval(klokke);
+        }
+      });
+    </script>
+  </body>
+</html>
