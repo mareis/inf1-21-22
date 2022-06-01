@@ -6,10 +6,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  margin: 0;
-  background-color: black;
-}
 #todo {
   max-width: 500px;
   margin: 20px auto;
@@ -35,7 +31,7 @@ input {
 }
 
 input[type="button"] {
-  background-color: #04aa6d;
+  background-color: #ffaa6d;
   border: none;
   color: white;
   padding: 16px 32px;
