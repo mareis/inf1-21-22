@@ -1,4 +1,10 @@
-let todoListe = ["Besøke Ona", "Bli fjellkonge", "Ta en kilosørret"];
+let todoListe = [
+  "Besøke Ona",
+  "Bli fjellkonge",
+  "Ta en kilosørret",
+  "Krigsskolen",
+  "1000 Elo",
+];
 skrivUtTodo();
 
 function leggTilTodo() {
@@ -23,3 +29,5 @@ function slettGjøremål(indeks) {
   todoListe.splice(indeks, 1);
   skrivUtTodo();
 }
+
+event;
